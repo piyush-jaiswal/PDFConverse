@@ -21,12 +21,18 @@ Note: The app will only respond to questions related to the loaded PDF.
 
 <br>
 
+## Demo
+
+![PDFConverse](./docs/PDFConverse_demo.png)
+
+<br>
+
 ## Setup
 This project is written in python `3.10.10`
 
-Copy `.env.example` and rename to `.env` <br>
-Add the `OPENAI_API_KEY` to `.env` <br>
-To use hugging face models add the `HUGGINGFACEHUB_API_TOKEN` to `.env`
+- Copy `.env.example` and rename to `.env` <br>
+- Add the `OPENAI_API_KEY` to `.env` <br>
+- To use hugging face models add the `HUGGINGFACEHUB_API_TOKEN` to `.env`
 
 Install requirements:
 ```
@@ -42,7 +48,6 @@ and run:
 ```
 pip install -r requirements.txt
 ```
-
 
 <br>
 
@@ -60,10 +65,3 @@ streamlit run app.py -- --hf
 ```
 
 Using `--hf` downloads the embedding model on your machine and the embeddings are performed locally. The LLM used is  accessed via the `Hugging Face Inference API`.
-
-
-<br>
-
-## Demo
-
-![PDFConverse](./docs/PDFConverse_demo.png)
